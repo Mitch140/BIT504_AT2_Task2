@@ -146,13 +146,13 @@ public class GameMain extends JPanel implements MouseListener{
 		        } else {
 		            currentState = GameState.Nought_won; // If Nought wins
 		        }
-		        //show a message to indicate who won
-		        JOptionPane.showMessageDialog(null, thePlayer == Player.Cross ? "Cross Wins!" : "Nought Wins!");
+
+		    
 		    } else if (board.isDraw()) {
 		        // If it's a draw, update the currentState
 		        currentState = GameState.Draw;
-		        // Show a message indicating it's a draw
-		        JOptionPane.showMessageDialog(null, "It's a Draw!");
+		        
+//		       
 		    }
 		    // Otherwise, the game continues (no need to update currentState here, as it's already set to Playing)
 		}
